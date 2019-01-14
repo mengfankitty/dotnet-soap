@@ -1,0 +1,23 @@
+*  [[https://en.wikipedia.org/wiki/Web_Services_Description_Language][WSDL]]
+
+#+BEGIN_QUOTE
+Web Services Definition Language (WSDL) is an XML-based interface description language that is used for describing the functionality offered by a web service.
+#+END_QUOTE
+
+*  [[https://en.wikipedia.org/wiki/SOAP][SOAP]]
+
+#+BEGIN_QUOTE
+Simple Object Access Protocol (SOAP) is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks.
+#+END_QUOTE
+
+*  [[https://en.wikipedia.org/wiki/Representational_state_transfer][REST]]
+
+#+BEGIN_QUOTE
+Representational State Transfer (REST) is a software architectural style that defines a set of constraints to be used for creating web services.
+#+END_QUOTE
+
+*  References
+
+- [[https://stackify.com/soap-net-core/][Create SOAP Services with ASP.NET Core]]
+- [[https://stackify.com/soap-vs-rest/][SOAP vs. REST]]
+- [[https://github.com/DigDes/SoapCore][SoapCore]]
