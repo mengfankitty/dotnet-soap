@@ -1,0 +1,6 @@
+* Generate Client
+
+#+BEGIN_SRC bash
+  dotnet svcutil http://localhost:5000/calculator.svc?wsdl -n '*,Client.Proxy02'
+  mv ServiceReference1 Proxy02
+#+END_SRC

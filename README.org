@@ -21,3 +21,4 @@ Representational State Transfer (REST) is a software architectural style that de
 - [[https://stackify.com/soap-net-core/][Create SOAP Services with ASP.NET Core]]
 - [[https://stackify.com/soap-vs-rest/][SOAP vs. REST]]
 - [[https://github.com/DigDes/SoapCore][SoapCore]]
+- [[https://docs.microsoft.com/en-us/dotnet/core/additional-tools/dotnet-svcutil-guide][dotnet-svcutil tool]]
