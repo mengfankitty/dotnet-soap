@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Server.Services;
 using SoapCore;
 
 namespace Server
@@ -22,7 +23,7 @@ namespace Server
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSoapCore();
-            services.AddSingleton<ServiceContractImpl>();
+            services.AddSingleton<ICalculatorService, CalculatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,9 +39,8 @@ namespace Server
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseMvc();
-            app.UseSoapEndpoint<ServiceContractImpl>("/ServicePath.asmx", new BasicHttpBinding());
+            app.UseSoapEndpoint<ICalculatorService>("/Calculator.svc", new BasicHttpBinding());
         }
     }
 }
