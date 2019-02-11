@@ -40,7 +40,7 @@ namespace Server
             }
 
             app.UseMvc();
-            app.UseSoapEndpoint<ICalculatorService>("/Calculator.svc", new BasicHttpBinding());
+            app.UseSoapEndpoint<ICalculatorService>("/calculator.svc", new BasicHttpBinding());
         }
     }
 }
