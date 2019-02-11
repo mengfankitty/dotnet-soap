@@ -39,8 +39,8 @@ namespace Server
                 app.UseHsts();
             }
 
-            app.UseMvc();
             app.UseSoapEndpoint<ICalculatorService>("/calculator.svc", new BasicHttpBinding());
+            app.UseMvc();
         }
     }
 }
