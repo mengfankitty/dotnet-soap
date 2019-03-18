@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Scope.Jobs;
+using Scope.Services;
 
 namespace Scope
 {
@@ -26,6 +28,10 @@ namespace Scope
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddTransient<TransientService>();
+            services.AddScoped<ScopeService>();
+            services.AddSingleton<SingletonService>();
+            services.AddHostedService<MyJob>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
