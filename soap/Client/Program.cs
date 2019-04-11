@@ -5,7 +5,7 @@ using Client.Proxy02;
 
 namespace Client
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
